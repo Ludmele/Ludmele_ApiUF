@@ -12,7 +12,7 @@ app.get('/compras', (req, res) => {
 app.get('/compras/:idcompras', (req, res) => {
     const idCOMPRAS = parseInt(req.params.idcompras);
     const lista = listaCompras.find(u => u.id === idCOMPRAS);
-    res.json(compras);
+    res.json(lista);
 });
 
 //Tratamento de Erro: \/

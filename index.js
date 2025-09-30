@@ -3,7 +3,7 @@
 //import colecaoUf from "./dados/dados.js";
 //import colecaoUF from "./dados/dados.js";
 import express from 'express';
-import { buscarUfs, buscarUfPorId, buscarUfsPorNome } from './servicos/servico.js';
+import { buscarUfs, buscarUfPorId, buscarUfsPorNome} from './servicos/servico.js';
 
 const app = express();
 
@@ -66,9 +66,9 @@ app.get('/ufs/:iduf', (req, res) => {
 
 //-------------Cria uma instância do aplicativo Express-------------
 
-const buscarUfsPorNome = (nomeUf) => {
+/*const buscarUfsPorNome = (nomeUf) => {
     return colecaoUf.filter(uf => uf.nome.toLowerCase().includes(nomeUf.toLowerCase()));
-};
+};*/
 
 app.listen(8080, () => {
     let data = new Date();
